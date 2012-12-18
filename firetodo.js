@@ -12,7 +12,7 @@ $(function() {
 $('#login').on('click', function() {
   // XXX: If you want to use your own node server, change the URL!
   var url = 'http://misc.firebase.com:22222/?user=' + $('#username').val();
-  $.get(url, function(data) {
+  $.getJSON(url, function(data) {
     if (data != null && data.firebaseAuthToken != null) {
       firebaseRef.unauth();
       firebaseRef.auth(data.firebaseAuthToken);
