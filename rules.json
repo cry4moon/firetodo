@@ -1,6 +1,6 @@
 {
   "rules": {
-    // All TODO items can be ready by anayone.
+    // All TODO items can be ready by anyone.
     ".read": true,
     // The manager can overwrite or delete any item.
     ".write": "auth.manager == true",
