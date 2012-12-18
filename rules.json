@@ -1,0 +1,23 @@
+{
+  "rules": {
+    // All TODO items can be ready by anayone.
+    ".read": true,
+    // The manager can overwrite or delete any item.
+    ".write": "auth.manager == true",
+    "$user": {
+      // A user is only allowed to write TODO items in their own bucket.
+      ".write": "auth.username == $user",
+      "$todo": {
+        // The 'from' field in the TODO item should match the user who
+        // is currently logged in.
+        "from": {
+          ".validate": "newData.val() == auth.username"
+        }        
+      }
+    },
+    // Anyone can write to Carol's list.
+    "carol": {
+      ".write": true
+    }
+  }
+}

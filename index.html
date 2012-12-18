@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>🔥 Firetodo: A todo sample app illustrating signed tokens - #1 todo app using Firebase since December 18, 2012!</title> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+  <script src="firetodo.js"></script>
+  <link rel="stylesheet" type="text/css" href="firetodo.css">
+</head>
+<body id="body">
+  <h1>Firetodo</h1>
+
+  <input type="text" id="username"> <button id="login">login</button> <span id="token"></span><br><br>
+
+  <div class="wrapper">
+
+    <div class="todolist">
+      Alice's Todo list
+      <ul id="alice-list"></ul>
+      <div>
+        <input id="alice-todo" type="text"/>
+        <button id="alice-add">Add</button>
+      </div>
+    </div>
+
+    <div class="todolist">
+      Bob's Todo list
+      <ul id="bob-list"></ul>
+      <div>
+        <input id="bob-todo" type="text"/>
+        <button id="bob-add">Add</button>
+      </div>
+    </div>
+
+    <div class="todolist">
+      Carol's Todo list
+      <ul id="carol-list"></ul>
+      <div>
+        <input id="carol-todo" type="text"/>
+        <button id="carol-add">Add</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
