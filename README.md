@@ -3,7 +3,7 @@ Firetodo
 
 A simple todo list app illustrating the use of server-signed tokens.
 
-### [Live Demo](http://firebase.github.com/firetodo/)
+### [Live Demo](http://firebase.github.io/firetodo/)
 
 How does it work?
 -----------------
